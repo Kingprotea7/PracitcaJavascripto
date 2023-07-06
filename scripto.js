@@ -1,10 +1,13 @@
 
-/* CARRITA DE COMPRAS CON ARREGLO VACIO,METODO PUSH Y CONFIRM*/
-let carrito=[];
-let respuesta=false;
-do{
-carrito.push(prompt("Que producto va al carrito?"));
-respuesta=confirm("Desea ingresar otro producto?")
+/* Funciones anonimas y flechas importante para el DOM*/
+//Funcion anonima,ignora el hoisting
+let prueba=function(a,b){
+  return a+b;
 }
-while(respuesta);
-console.log(carrito);
+
+let prueba2=(a,b)=>
+  a+b;
+
+
+console.log(prueba(2,3));
+console.log(prueba2(3,3));
