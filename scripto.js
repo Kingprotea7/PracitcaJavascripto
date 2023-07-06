@@ -1,10 +1,10 @@
-const frutas=[];
-/* Agregar un dato al arreglo*/
-frutas.push("pera")
-/* Agregar un dato al arreglo en el indice 1*/
-frutas.push("tetas")
-/* Eliminar último elemento al arreglo*/
-/* El elemento sacado sera tetas*/
-frutas.pop()
-/* IMPRESION DEL ARRAY,SOLO ESTA EL VALOR PERA*/
-console.log(frutas);
+
+/* CARRITA DE COMPRAS CON ARREGLO VACIO,METODO PUSH Y CONFIRM*/
+let carrito=[];
+let respuesta=false;
+do{
+carrito.push(prompt("Que producto va al carrito?"));
+respuesta=confirm("Desea ingresar otro producto?")
+}
+while(respuesta);
+console.log(carrito);
